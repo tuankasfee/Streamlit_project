@@ -20,7 +20,8 @@ def predict_class():
     plt.title("Probabilities of the Data belonging to each class")
     for index, value in enumerate(probs):
         plt.text(value, index,str(value))
-    st.pyplot()
+    fig = plt.plot()
+    st.pyplot(fig)
 st.markdown("**Please enter the details of the flower in the form of 4 floating point values separated by commas**")
 sepal_length = st.text_input('Enter sepal_length', '')
 sepal_width = st.text_input('Enter sepal_width', '')
