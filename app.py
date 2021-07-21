@@ -22,6 +22,7 @@ def predict_class():
         plt.text(value, index,str(value))
     fig = plt.plot()
     st.pyplot(fig)
+    st.set_option('deprecation.showPyplotGlobalUse', False)
 st.markdown("**Please enter the details of the flower in the form of 4 floating point values separated by commas**")
 sepal_length = st.text_input('Enter sepal_length', '')
 sepal_width = st.text_input('Enter sepal_width', '')
